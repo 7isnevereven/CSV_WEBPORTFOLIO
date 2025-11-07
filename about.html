@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Carl Steven Vinluan</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="animated-gradient" id="top">
+
+    <!-- global sticky navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md">
+        <div class="w-full h-20 flex justify-center items-center px-4 relative">
+            
+            <!-- desktop links -->
+            <div class="hidden md:flex space-x-4 md:space-x-8">
+                <a href="index.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">HOME</a>
+                <a href="skills.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">SKILLS</a>
+                <a href="projects.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">PROJECTS</a>
+                <a href="about.html" class="py-2 px-5 rounded-md text-sm bg-blue-600 text-white transition-colors">ABOUT</a>
+                <a href="contact.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">CONTACT</a>
+            </div>
+            
+            <!-- mobile menu button -->
+            <div class="md:hidden absolute right-4">
+                <button id="menu-btn" class="text-white focus:outline-none p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- mobile menu dropdown -->
+        <div id="menu" class="md:hidden hidden bg-black/50 backdrop-blur-lg shadow-lg">
+            <a href="index.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">HOME</a>
+            <a href="skills.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">SKILLS</a>
+            <a href="projects.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">PROJECTS</a>
+            <a href="about.html" class="block py-3 px-6 text-sm text-white bg-blue-600/50 hover:bg-gray-700/50">ABOUT</a>
+            <a href="contact.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">CONTACT</a>
+        </div>
+    </nav>
+
+    <main class="w-full max-w-5xl mx-auto px-4 pt-20 pb-12 md:pb-16">
+        
+        <section class="info-card mt-12">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                
+                <!-- avatar image -->
+                <div class="flex-shrink-0 w-40 h-40 md:w-56 md:h-56">
+                    <img 
+                        class="w-full h-full rounded-full object-cover border-4 border-gray-600" 
+                        src="assets\photos\pfp\1.jpeg" 
+                        alt="Carl Steven Vinluan"
+                    >
+                </div>
+
+                <div class="flex flex-1 flex-col justify-center text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl">CARL STEVEN VINLUAN</h1>
+                    <p class="mt-4 text-lg text-slate-200 max-w-lg">
+                        I'm a UX/UI Designer based in Quezon City, passionate about creating meaningful, user-centered designs that blend form and function.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start">
+                        <a href="https://drive.google.com/file/d/1Tsu_eRyMb569nLe3Beyd_-hyZ7FFwRfo/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button bg-blue-600 text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                            DOWNLOAD RESUME
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- vision & education -->
+        <section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- vision card -->
+            <div class="info-card flex flex-col">
+                <h2 class="text-2xl">VISION</h2>
+                <ul class="mt-6 space-y-3 text-slate-200 list-disc list-inside">
+                    <li>To design with empathy and purpose. To make interfaces that make complicated ideas easy to understand, use images to tell stories, and give every interaction meaning.</li>
+                    <li>To work with teams that value creativity, inclusion, and human-centered design.</li>
+                    <li>To create digital experiences that connect function and emotion, turning everyday interactions into moments of connection and joy.</li>
+                </ul>
+            </div>
+
+            <!-- education card -->
+            <div class="info-card flex flex-col">
+                <h2 class="text-2xl">EDUCATION</h2>
+                <div class="mt-6 space-y-4 text-slate-200">
+                    <div>
+                        <p class="font-semibold">2021-2023</p>
+                        <p>Senior High School</p>
+                        <p class="text-sm text-slate-400">Our Lady of Fatima University – Quezon City</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">2023–Present</p>
+                        <p>Undergraduate</p>
+                        <p class="text-sm text-slate-400">Polytechnic University of the Philippines – Quezon City Branch</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- organizational experiences -->
+        <section class="mt-16">
+            <h2 class="text-3xl text-center">ORGANIZATIONAL EXPERIENCES</h2>
+            
+            <!-- responsive grid -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="info-card flex flex-col">
+                    <h3 class="text-2xl">Literary Writer – Vox Nova</h3>
+                    <p class="mt-2 text-slate-300">2025 – Present</p>
+                    <p class="mt-4 text-slate-200">
+                        Contribute original literary pieces that explore various themes to bring meaningful stories to life and strengthen the organization's culture of literary expression.
+                    </p>
+                </div>
+
+                <div class="info-card flex flex-col">
+                    <h3 class="text-2xl">Creatives Member – AcademiTech Research and Knowledge (ARK)</h3>
+                    <p class="mt-2 text-slate-300">2025 – Present</p>
+                    <p class="mt-4 text-slate-200">
+                        Design and develop creative materials that highlight ARK's research and academic initiatives.
+                    </p>
+                </div>
+
+                <div class="info-card flex flex-col">
+                    <h3 class="text-2xl">Scriptwriter – Mag-aaral ng Unibersidad sa Sining at Adhika (MUSA)</h3>
+                    <p class="mt-2 text-slate-300">2025 – Present</p>
+                    <p class="mt-4 text-slate-200">
+                        Write scripts for stage and screen productions centered on student life, art, and advocacy.
+                    </p>
+                </div>
+                
+                <div class="info-card flex flex-col">
+                    <h3 class="text-2xl">Creatives Member – Siklaw Esports</h3>
+                    <p class="mt-2 text-slate-300">2025 – Present</p>
+                    <p class="mt-4 text-slate-200">
+                        Create publication materials and digital assets for esports events and announcements.
+                    </p>
+                </div>
+                
+                <div class="info-card flex flex-col">
+                    <h3 class="text-2xl">Tech & Propaganda Committee – COMELEC PUPQC</h3>
+                    <p class="mt-2 text-slate-300">2025 – Present</p>
+                    <p class="mt-4 text-slate-200">
+                        Produce and manage digital campaign materials for the PUPQC Supreme Student Council elections.
+                    </p>
+                </div>
+                
+                <div class="info-card flex flex-col">
+                    <h3 class="text-2xl">Digital Committee/Assistant Sound Director – Sinagtala 2025</h3>
+                    <p class="mt-2 text-slate-300">2025</p>
+                    <p class="mt-4 text-slate-200">
+                        Served as part of the production team for Mr. & Ms. PUPQC 2025, contributing to both digital and technical aspects.
+                    </p>
+                </div>
+                
+                <div class="info-card flex flex-col">
+                    <h3 class="text-2xl">Creatives Member – Commonwealth Information Technology Society (CommITS)</h3>
+                    <p class="mt-2 text-slate-300">2024 - 2025</p>
+                    <p class="mt-4 text-slate-200">
+                        Designed publication materials and provided live media support during the organization’s events.
+                    </p>
+                </div>    
+            </div>
+        </section>
+
+        <!-- interest and inspirations -->
+        <section class="mt-16">
+            <h2 class="text-3xl text-center">INTEREST AND INSPIRATIONS</h2>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- pubmat portfolio card -->
+                <div class="info-card flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl">DESIGNING PUBLICATION MATERIALS</h3>
+                        <p class="mt-2 text-slate-300">Creating visual stories through posters and layouts.</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1MznnQ660cJq0XPbDoQTaP1ueVB0upuSI/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button text-sm w-full text-center mt-6 bg-blue-600 text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                        VIEW PUBMAT PORTFOLIO
+                    </a>
+                </div>
+
+                <!-- music card -->
+                <div class="info-card flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl">MAKING MUSIC</h3>
+                        <p class="mt-2 text-slate-300">Producing melodies that inspire design harmony.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 mt-6">
+                         <a href="https://open.spotify.com/artist/3hpPUT2YPNiWtwECpLB4wT?si=kDl1rcmiRkmSKlLZH0pxiA" target="_blank" rel="noopener noreferrer" class="download-button text-sm w-full text-center btn-green text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                            VIEW SPOTIFY PROFILE
+                        </a>
+                        <a href="https://www.youtube.com/@ven.studioseven" target="_blank" rel="noopener noreferrer" class="download-button text-sm w-full text-center btn-red text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                            VIEW YOUTUBE CHANNEL
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- back to top button -->
+        <section class="mt-16 flex justify-center">
+            <a href="#top" class="download-button bg-gray-600/50 text-white px-12 py-3 shadow-lg hover:bg-gray-700/50 transition-colors duration-300">
+                BACK TO TOP
+            </a>
+        </section>
+
+    </main>
+
+    <!-- javascript for mobile menu -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Steven Vinluan - Portfolio</title>
+    
+    <!-- load tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- load poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- link to external css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="animated-gradient" id="top">
+
+    <!-- global sticky navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md">
+        <div class="w-full h-20 flex justify-center items-center px-4 relative">
+            
+            <!-- links -->
+            <div class="hidden md:flex space-x-4 md:space-x-8">
+                <a href="index.html" class="py-2 px-5 rounded-md text-sm bg-blue-600 text-white transition-colors">HOME</a>
+                <a href="skills.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">SKILLS</a>
+                <a href="projects.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">PROJECTS</a>
+                <a href="about.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">ABOUT</a>
+                <a href="contact.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">CONTACT</a>
+            </div>
+            
+            <!-- mobile menu button -->
+            <div class="md:hidden absolute right-4">
+                <button id="menu-btn" class="text-white focus:outline-none p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- mobile menu dropdown -->
+        <div id="menu" class="md:hidden hidden bg-black/50 backdrop-blur-lg shadow-lg">
+            <a href="index.html" class="block py-3 px-6 text-sm text-white bg-blue-600/50 hover:bg-gray-700/50">HOME</a>
+            <a href="skills.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">SKILLS</a>
+            <a href="projects.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">PROJECTS</a>
+            <a href="about.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">ABOUT</a>
+            <a href="contact.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">CONTACT</a>
+        </div>
+    </nav>
+
+    <main class="w-full max-w-5xl mx-auto px-4 pt-20 pb-12 md:pb-16">        
+        <section class="info-card mt-12">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">                
+                <div class="flex-shrink-0 w-40 h-40 md:w-56 md:h-56">
+                    <img 
+                        class="w-full h-full rounded-full object-cover border-4 border-gray-600" 
+                        src="assets\photos\pfp\1.jpeg" 
+                        alt="Carl Steven Vinluan"
+                    >
+                </div>
+
+                <div class="flex flex-1 flex-col justify-center text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl">HELLO, I'M<br>CARL STEVEN VINLUAN</h1>
+                    <p class="mt-4 text-lg text-slate-200 max-w-lg">
+                        I'm a UX and UI Designer dedicated to crafting digital experiences that are both intuitive and visually engaging, blending functionality with aesthetic appeal.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start">
+                        <a href="https://drive.google.com/file/d/1Tsu_eRyMb569nLe3Beyd_-hyZ7FFwRfo/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="download-button bg-blue-600 text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                            DOWNLOAD RESUME
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--featured project-->
+        <section class="mt-16">
+            <h2 class="text-3xl text-center">FEATURED PROJECT</h2>
+            
+            <div id="past-and-play" class="mt-8">
+                <div class="info-card flex flex-col gap-6">
+                    <div>
+                        <h3 class="text-2xl">PAST AND PLAY – A FLUTTERFLOW GAME</h3>
+                        <p class="mt-2 text-slate-300">
+                            A multiple-choice educational game that blends common knowledge with historical events. Designed to make learning engaging through interactive storytelling and quiz-style gameplay.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                        <div class="w-full aspect-video bg-black/30 rounded-lg overflow-hidden">
+                            <video 
+                                class="w-full h-full object-cover" 
+                                controls 
+                                poster="assets\photos\p&p\1.jpeg">
+                                <source src="assets\videos\1.mov" type="video/mp4">
+                                your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="w-full">
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 h-[28rem] md:h-full md:aspect-video overflow-y-auto pr-2">
+                                <img src="assets\photos\p&p\1.png" alt="Past and Play Screenshot 1" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\2.png" alt="Past and Play Screenshot 2" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\3.png" alt="Past and Play Screenshot 3" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\4.png" alt="Past and Play Screenshot 4" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\5.png" alt="Past and Play Screenshot 5" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\6.png" alt="Past and Play Screenshot 6" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\7.png" alt="Past and Play Screenshot 7" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\8.png" alt="Past and Play Screenshot 8" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\9.png" alt="Past and Play Screenshot 9" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\10.png" alt="Past and Play Screenshot 10" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                                <img src="assets\photos\p&p\11.png" alt="Past and Play Screenshot 11" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- my vision -->
+        <section class="mt-16">
+            <h2 class="text-3xl text-center">MY VISION</h2>
+            <div class="mt-8 info-card flex flex-col max-w-3xl mx-auto">
+                <ul class="space-y-3 text-slate-200 list-disc list-inside">
+                    <li>To design with empathy and purpose. To make interfaces that make complicated ideas easy to understand, use images to tell stories, and give every interaction meaning.</li>
+                    <li>To work with teams that value creativity, inclusion, and human-centered design.</li>
+                    <li>To create digital experiences that connect function and emotion, turning everyday interactions into moments of connection and joy.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- mini contact -->
+        <section class="mt-16">
+            <h2 class="text-3xl text-center">LET'S COLLABORATE!</h2>
+            <div class="mt-8 info-card flex flex-col items-center max-w-lg mx-auto">
+                <p class="text-lg text-slate-200 text-center">
+                    Have a project in mind or just want to connect? Feel free to reach out.
+                </p>
+                <a href="contact.html" class="download-button mt-8 bg-blue-600 text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                    CONTACT ME
+                </a>
+            </div>
+        </section>
+
+        <!-- back to top -->
+        <section class="mt-16 flex justify-center">
+            <a href="#top" class="download-button bg-gray-600/50 text-white px-12 py-3 shadow-lg hover:bg-gray-700/50 transition-colors duration-300">
+                BACK TO TOP
+            </a>
+        </section>
+
+    </main>
+
+    <!-- pang pop pop sa image -->
+    <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <!-- close button -->
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white text-5xl z-[102] hover:text-gray-300">&times;</button>
+        
+        <!-- image -->
+        <img id="lightbox-img" src="" alt="Zoomed Project Image" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-xl">
+    </div>
+
+
+    <!-- javascript for page functions -->
+    <script>
+        // mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    
+        // image lightbox logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const galleryImages = document.querySelectorAll('.gallery-img');
+
+        // add click listener to each gallery image
+        galleryImages.forEach(img => {
+            img.addEventListener('click', function() {
+                lightboxImg.src = this.src; // set the image source
+                lightbox.classList.remove('hidden'); // show the lightbox
+            });
+        });
+        
+        // add click listener to the close button
+        lightboxClose.addEventListener('click', function() {
+            lightbox.classList.add('hidden'); // hide the lightbox
+            lightboxImg.src = ''; // clear src
+        });
+
+        // optional: close lightbox by clicking background
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) { // only close if background (not image) is clicked
+                lightbox.classList.add('hidden');
+                lightboxImg.src = ''; // clear src
+            }
+        });
+    </script>
+</body>
+</html>

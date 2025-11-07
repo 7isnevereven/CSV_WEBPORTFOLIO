@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Carl Steven Vinluan</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="animated-gradient" id="top">
+
+    <!-- global sticky navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md">
+        <div class="w-full h-20 flex justify-center items-center px-4 relative">
+            <div class="hidden md:flex space-x-4 md:space-x-8">
+                <a href="index.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">HOME</a>
+                <a href="skills.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">SKILLS</a>
+                <a href="projects.html" class="py-2 px-5 rounded-md text-sm bg-blue-600 text-white transition-colors">PROJECTS</a>
+                <a href="about.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">ABOUT</a>
+                <a href="contact.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">CONTACT</a>
+            </div>
+            
+            <!-- mobile menu button -->
+            <div class="md:hidden absolute right-4">
+                <button id="menu-btn" class="text-white focus:outline-none p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- mobile menu dropdown -->
+        <div id="menu" class="md:hidden hidden bg-black/50 backdrop-blur-lg shadow-lg">
+            <a href="index.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">HOME</a>
+            <a href="skills.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">SKILLS</a>
+            <a href="projects.html" class="block py-3 px-6 text-sm text-white bg-blue-600/50 hover:bg-gray-700/50">PROJECTS</a>
+            <a href="about.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">ABOUT</a>
+            <a href="contact.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">CONTACT</a>
+        </div>
+    </nav>
+
+    <main class="w-full max-w-5xl mx-auto px-4 pt-20 pb-12 md:pb-16">
+        <h1 class="text-5xl text-center mt-12">APP AND GAME DEVELOPMENT</h1>
+        <section id="past-and-play" class="mt-8">
+            <div class="info-card flex flex-col gap-6">
+                <div>
+                    <h3 class="text-2xl">PAST AND PLAY – A FLUTTERFLOW GAME</h3>
+                    <p class="mt-2 text-slate-300">
+                        A multiple-choice educational game that blends common knowledge with historical events. Designed to make learning engaging through interactive storytelling and quiz-style gameplay.
+                    </p>
+                </div>
+                <!-- media section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                    <!-- video player -->
+                    <div class="w-full aspect-video bg-black/30 rounded-lg overflow-hidden">
+                        <video 
+                            class="w-full h-full object-cover" 
+                            controls 
+                            poster="assets\photos\p&p\1.jpeg">
+                            <source src="assets\videos\1.mov" type="video/mp4">
+                            your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- scrollable image gallery -->
+                    <div class="w-full">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 h-[28rem] md:h-full md:aspect-video overflow-y-auto pr-2">
+                            <img src="assets\photos\p&p\1.png" alt="Past and Play Screenshot 1" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\2.png" alt="Past and Play Screenshot 2" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\3.png" alt="Past and Play Screenshot 3" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\4.png" alt="Past and Play Screenshot 4" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\5.png" alt="Past and Play Screenshot 5" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\6.png" alt="Past and Play Screenshot 6" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\7.png" alt="Past and Play Screenshot 7" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\8.png" alt="Past and Play Screenshot 8" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\9.png" alt="Past and Play Screenshot 9" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\10.png" alt="Past and Play Screenshot 10" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\p&p\11.png" alt="Past and Play Screenshot 11" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <h1 class="text-5xl text-center mt-20">DESIGN & CREATIVE PROJECTS</h1>
+        
+        <section id="pub-design" class="mt-8">
+            <div class="info-card flex flex-col gap-6">
+                <div>
+                    <h3 class="text-2xl">PUBLICATION DESIGN COLLECTION</h3>
+                    <p class="mt-2 text-slate-300">
+                        A series of posters, infographics, and event materials created for student organizations. Each piece focuses on visual clarity, balance, and storytelling through design.
+                    </p>
+                </div>
+                <!-- media section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                    <!-- main image -->
+                    <div class="w-full aspect-video bg-black/30 rounded-lg overflow-hidden">
+                        <img src="assets\photos\pubmats\1.png" alt="Main Publication Material" class="gallery-img w-full h-full object-cover cursor-pointer">
+                    </div>
+                    <!-- scrollable image gallery -->
+                    <div class="w-full">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 h-[28rem] md:h-full md:aspect-video overflow-y-auto pr-2">
+                            <img src="assets\photos\pubmats\2.png" alt="Publication Design 2" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\3.jpg" alt="Publication Design 3" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\4.jpg" alt="Publication Design 4" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\5.jpg" alt="Publication Design 5" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\6.jpg" alt="Publication Design 6" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\7.jpg" alt="Publication Design 7" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\8.jpg" alt="Publication Design 8" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\9.jpg" alt="Publication Design 9" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\10.jpg" alt="Publication Design 10" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\pubmats\11.jpg" alt="Publication Design 11" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="text-5xl text-center mt-20">MULTIMEDIA PROJECTS</h1>
+        
+        <section id="music-prod" class="mt-8">
+            <div class="info-card flex flex-col gap-6">
+                <div>
+                    <h3 class="text-2xl">MUSIC PRODUCTION</h3>
+                    <p class="mt-2 text-slate-300">
+                        Creating original tracks that blend storytelling and emotion through melody, lyrics, and sound design across genres like pop, trap, and indie. Shown below are album arts of the projects only. You can click the links below to listen.
+                    </p>
+                </div>
+                <!-- media section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                    <!-- main image -->
+                    <div class="w-full aspect-video bg-black/30 rounded-lg overflow-hidden">
+                        <img src="assets\photos\music\1.jpeg" alt="Music Production Main" class="gallery-img w-full h-full object-cover cursor-pointer">
+                    </div>
+                    <!-- scrollable image gallery -->
+                    <div class="w-full">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 h-[28rem] md:h-full md:aspect-video overflow-y-auto pr-2">
+                            <img src="assets\photos\music\2.jpg" alt="Music Album Art 2" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\music\3.jpeg" alt="Music Album Art 3" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\music\4.png" alt="Music Album Art 4" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\music\5.jpg" alt="Music Album Art 5" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\music\6.jpg" alt="Music Album Art 6" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\music\7.jpeg" alt="Music Album Art 7" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\music\8.jpeg" alt="Music Album Art 8" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                            <img src="assets\photos\music\9.png" alt="Music Album Art 9" class="gallery-img w-full h-auto rounded-lg cursor-pointer hover:opacity-75 transition-opacity">
+                        </div>
+                    </div>
+                </div>
+                <!-- button section -->
+                <div class="flex flex-col md:flex-row gap-4 mt-2">
+                    <a href="https://open.spotify.com/artist/3hpPUT2YPNiWtwECpLB4wT?si=kDl1rcmiRkmSKlLZH0pxiA" target="_blank" rel="noopener noreferrer" class="download-button text-sm w-full text-center btn-green text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                        VIEW SPOTIFY PROFILE
+                    </a>
+                    <a href="https://www.youtube.com/@ven.studioseven" target="_blank" rel="noopener noreferrer" class="download-button text-sm w-full text-center btn-red text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                        VIEW YOUTUBE CHANNEL
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="music-video" class="mt-8">
+            <div class="info-card flex flex-col gap-6">
+                <div>
+                    <h3 class="text-2xl">MUSIC VIDEO PRODUCTION</h3>
+                    <p class="mt-2 text-slate-300">
+                        Producing visual narratives that complement each song's emotion and theme through creative direction, editing, and storytelling.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                    <div>
+                        <div class="w-full aspect-video bg-black/30 rounded-lg overflow-hidden">
+                            <video 
+                                class="w-full h-full object-cover" 
+                                controls 
+                                poster="assets\photos\mvthumbnail\1.jpg">
+                                <source src="assets\videos\VEN - VEN - The Greatest Heist In History (Music Video).mp4" type="video/mp4">
+                                your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="mt-2 text-slate-300 text-center md:text-left">"The Greatest Heist in History" Music Video</p>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="flex flex-col gap-6 h-[28rem] md:h-full md:aspect-video overflow-y-auto pr-2">   
+                            <div>
+                                <div class="w-full aspect-video bg-black/30 rounded-lg overflow-hidden">
+                                    <video 
+                                        class="w-full h-full object-cover" 
+                                        controls 
+                                        poster="assets\photos\mvthumbnail\2.jpg">
+                                        <source src="assets\videos\VEN - VEN - crimson red (Music Video).mp4" type="video/mp4">
+                                        your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="mt-2 text-slate-300 text-center md:text-left">"crimson red" Music Video</p>
+                            </div>
+
+                            <div>
+                                <div class="w-full aspect-video bg-black/30 rounded-lg overflow-hidden">
+                                    <video 
+                                        class="w-full h-full object-cover" 
+                                        controls 
+                                        poster="assets\photos\mvthumbnail\3.jpg">
+                                        <source src="assets\videos\VEN - VEN - Something (Music Video).mp4" type="video/mp4">
+                                        your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="mt-2 text-slate-300 text-center md:text-left">"Something" Music Video</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex mt-2">
+                    <a href="https://www.youtube.com/@ven.studioseven" target="_blank" rel="noopener noreferrer" class="download-button text-sm w-full text-center btn-red text-white px-8 py-3 shadow-lg transition-transform hover:scale-105 duration-300">
+                        VIEW YOUTUBE CHANNEL
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- back to top button -->
+        <section class="mt-16 flex justify-center">
+            <a href="#top" class="download-button bg-gray-600/50 text-white px-12 py-3 shadow-lg hover:bg-gray-700/50 transition-colors duration-300">
+                BACK TO TOP
+            </a>
+        </section>
+
+    </main>
+
+    <!-- image uli -->
+    <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <!-- close button -->
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white text-5xl z-[102] hover:text-gray-300">&times;</button>
+        
+        <!-- lightbox image -->
+        <img id="lightbox-img" src="" alt="Zoomed Project Image" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-xl">
+    </div>
+
+
+    <!-- javascript for page functions -->
+    <script>
+        // mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    
+        // image lightbox logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const galleryImages = document.querySelectorAll('.gallery-img');
+
+        // add click listener to each gallery image
+        galleryImages.forEach(img => {
+            img.addEventListener('click', function() {
+                lightboxImg.src = this.src; 
+                lightbox.classList.remove('hidden'); 
+            });
+        });
+        
+        // add click listener to the close button
+        lightboxClose.addEventListener('click', function() {
+            lightbox.classList.add('hidden'); 
+            lightboxImg.src = ''; 
+        });
+
+        // close lightbox by clicking background
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) { 
+                lightbox.classList.add('hidden');
+                lightboxImg.src = ''; 
+            }
+        });
+    </script>
+</body>
+</html>

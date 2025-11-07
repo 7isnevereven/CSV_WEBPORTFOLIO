@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Carl Steven Vinluan</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html {
+            scroll-padding-top: 9rem; 
+        }
+        @media (max-width: 767px) {
+            html {
+                scroll-padding-top: 5rem;
+            }
+        }
+        .sub-nav-hidden {
+            transform: translateY(-100%);
+        }
+    </style>
+
+</head>
+<body class="animated-gradient" id="top">
+
+    <!-- global sticky navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md">
+        <div class="w-full h-20 flex justify-center items-center px-4 relative">
+            
+            <!-- desktop links -->
+            <div class="hidden md:flex space-x-4 md:space-x-8">
+                <a href="index.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">HOME</a>
+                <a href="skills.html" class="py-2 px-5 rounded-md text-sm bg-blue-600 text-white transition-colors">SKILLS</a>
+                <a href="projects.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">PROJECTS</a>
+                <a href="about.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">ABOUT</a>
+                <a href="contact.html" class="py-2 px-5 rounded-md text-sm text-gray-300 hover:text-white transition-colors">CONTACT</a>
+            </div>
+            
+            <!-- mobile menu button -->
+            <div class="md:hidden absolute right-4">
+                <button id="menu-btn" class="text-white focus:outline-none p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- mobile menu dropdown -->
+        <div id="menu" class="md:hidden hidden bg-black/50 backdrop-blur-lg shadow-lg">
+            <a href="index.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">HOME</a>
+            <a href="skills.html" class="block py-3 px-6 text-sm text-white bg-blue-600/50 hover:bg-gray-700/50">SKILLS</a>
+            <a href="projects.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">PROJECTS</a>
+            <a href="about.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">ABOUT</a>
+            <a href="contact.html" class="block py-3 px-6 text-sm text-gray-200 hover:bg-gray-700/50">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- secondary sticky navigation (on-page links) -->
+    <nav id="sub-nav" class="hidden md:flex fixed top-20 left-0 right-0 z-40 h-16 justify-center items-center transition-transform duration-300 ease-in-out">
+        <!-- floating banner container -->
+        <div class="flex items-center justify-center space-x-4 md:space-x-8 px-6 py-3 backdrop-blur-md bg-black/50 rounded-full shadow-lg">
+            <a href="#core-design" class="py-2 px-4 rounded-md text-xs text-gray-300 hover:text-white transition-colors">CORE DESIGN SKILLS</a>
+            <a href="#research" class="py-2 px-4 rounded-md text-xs text-gray-300 hover:text-white transition-colors">RESEARCH & ANALYTICAL SKILLS</a>
+            <a href="#tools" class="py-2 px-4 rounded-md text-xs text-gray-300 hover:text-white transition-colors">TOOLS & SOFTWARE</a>
+            <a href="#soft-skills" class="py-2 px-4 rounded-md text-xs text-gray-300 hover:text-white transition-colors">SOFT SKILLS</a>
+        </div>
+    </nav>
+
+    <main class="w-full max-w-5xl mx-auto px-4 pt-20 pb-12 md:pt-36 md:pb-16">
+
+        <!-- page title -->
+        <h1 class="text-5xl text-center mt-12">SKILLS</h1>
+        
+        <section id="core-design" class="mt-8">
+            <h2 class="text-3xl text-center">CORE DESIGN SKILLS</h2>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="info-card">
+                    <h3 class="text-2xl">User Interface (UI) Design</h3>
+                    <p class="mt-4 text-slate-200">
+                        Creating visually beautiful and intuitive interfaces to enhance user interaction and satisfaction.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">User Experience (UX) Research</h3>
+                    <p class="mt-4 text-slate-200">
+                        Understanding user needs and behaviors to inform design decisions and create meaningful experiences.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Wireframing & Prototyping</h3>
+                    <p class="mt-4 text-slate-200">
+                        Creating low- to high-fidelity prototypes to help designers see and test ideas early on.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Visual Design & Layout</h3>
+                    <p class="mt-4 text-slate-200">
+                        Using various fonts, colors, and compositions to create balanced, appealing designs.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Interaction Design</h3>
+                    <p class="mt-4 text-slate-200">
+                        Designing interactive features that seamlessly guide people through the experience.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Information Architecture</h3>
+                    <p class="mt-4 text-slate-200">
+                        Structuring content logically to ensure clarity and easy navigation.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Responsive Web & Mobile Design</h3>
+                    <p class="mt-4 text-slate-200">
+                        Adapting layouts for optimal performance across all screen sizes.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Accessibility-Focused Design</h3>
+                    <p class="mt-4 text-slate-200">
+                        Ensure that designs are inclusive and accessible to people of all abilities.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="mt-16">
+            <h2 class="text-3xl text-center">RESEARCH & ANALYTICAL SKILLS</h2>
+            
+             <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="info-card">
+                    <h3 class="text-2xl">User Research & Persona Development</h3>
+                    <p class="mt-4 text-slate-200">
+                        Gathering insights to create realistic user personas that guide design goals.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Usability Testing</h3>
+                    <p class="mt-4 text-slate-200">
+                        Evaluating prototypes and existing goods to improve functionality and user satisfaction.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Empathy Mapping</h3>
+                    <p class="mt-4 text-slate-200">
+                        Understanding users' emotions, motives, and pain spots allows develop better human-centered solutions.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Problem-Solving and Critical Thinking</h3>
+                    <p class="mt-4 text-slate-200">
+                        Addressing design difficulties using logical reasoning and creativity.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tools" class="mt-16">
+            <h2 class="text-3xl text-center">TOOLS & SOFTWARE</h2>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="info-card">
+                    <h3 class="text-2xl">Canva</h3>
+                    <p class="mt-4 text-slate-200">
+                        Creating visually engaging publication materials, presentations, and social media graphics with ease and precision.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">ibisPaint X</h3>
+                    <p class="mt-4 text-slate-200">
+                        Designing digital illustrations and concept art using an intuitive mobile drawing platform.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Microsoft PowerPoint</h3>
+                    <p class="mt-4 text-slate-200">
+                        Developing visually cohesive presentation layouts and creative slide designs for academic and professional use.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Notion</h3>
+                    <p class="mt-4 text-slate-200">
+                        Organizing tasks, managing projects, and streamlining research documentation in a flexible workspace.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Microsoft Word & Excel</h3>
+                    <p class="mt-4 text-slate-200">
+                        Producing well-structured documents and managing data effectively for reports, plans, and analysis.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Figma & Photoshop</h3>
+                    <p class="mt-4 text-slate-200">
+                        Designing and prototyping simple user interfaces and visual layouts for digital experiences.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">FlutterFlow and Visual Studio Code (VSCode)</h3>
+                    <p class="mt-4 text-slate-200">
+                        Designing, prototyping, and developing interactive web and mobile applications with a no-code and code-based approach.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">SQLite and Microsoft SQL Server</h3>
+                    <p class="mt-4 text-slate-200">
+                        Structuring, managing, and querying databases to support data-driven applications and systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="soft-skills" class="mt-16">
+            <h2 class="text-3xl text-center">SOFT SKILLS</h2>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="info-card">
+                    <h3 class="text-2xl">Empathy & User-Centered Thinking</h3>
+                    <p class="mt-4 text-slate-200">
+                        Designing with genuine care for users’ perspectives and needs.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Collaboration & Teamwork</h3>
+                    <p class="mt-4 text-slate-200">
+                        Working effectively with diverse teams to achieve shared goals.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Creative Problem-Solving</h3>
+                    <p class="mt-4 text-slate-200">
+                        Finding innovative solutions through experimentation and design thinking.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Communication & Storytelling</h3>
+                    <p class="mt-4 text-slate-200">
+                        Presenting ideas clearly and engagingly to both technical and non-technical audiences.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Adaptability & Growth Mindset</h3>
+                    <p class="mt-4 text-slate-200">
+                        Staying open to feedback and continuous learning in a dynamic field.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Attention to Detail</h3>
+                    <p class="mt-4 text-slate-200">
+                        Ensuring accuracy and polish in every aspect of design work.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-2xl">Time Management</h3>
+                    <p class="mt-4 text-slate-200">
+                        Balancing multiple projects while meeting deadlines efficiently.
+                    </sP>
+                </div>
+            </div>
+        </section>
+        
+        <!-- back to top button -->
+        <section class="mt-16 flex justify-center">
+            <a href="#top" class="download-button bg-gray-600/50 text-white px-12 py-3 shadow-lg hover:bg-gray-700/50 transition-colors duration-300">
+                BACK TO TOP
+            </a>
+        </section>
+
+    </main>
+
+    <!-- javascript for page functions -->
+    <script>
+        // mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    
+        // show/hide sub-nav on scroll
+        const subNav = document.getElementById('sub-nav');
+        let lastScrollY = window.scrollY;
+    
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (subNav) {
+                if (currentScrollY > lastScrollY && currentScrollY > 150) {
+                    // scrolling down
+                    subNav.classList.add('sub-nav-hidden');
+                } else if (currentScrollY < lastScrollY) {
+                    // scrolling up
+                    subNav.classList.remove('sub-nav-hidden');
+                }
+            }
+            
+            lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+        });
+    </script>
+</body>
+</html>

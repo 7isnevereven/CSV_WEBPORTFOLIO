@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+/* animated gradient background + parallax */
+.animated-gradient {
+    background: linear-gradient(-45deg, #0a0a14, #1a2a4a, #0a0a14, #1a2a4a);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed; /* parallax */
+    min-height: 100vh; /* full screen coverage */
+}
+
+/* gradient animation keyframes */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* custom font sa titles and buttons */
+h1, h2, h3,
+nav a,
+.download-button {
+    font-family: 'Momo Trust Display', sans-serif;
+    overflow-wrap: break-word; /* prevent long text overflow */
+}
+
+/* rounded buttons */
+.download-button {
+    border-radius: 9999px;
+}
+
+/* card style */
+.info-card {
+    background: rgba(10, 10, 20, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* safari support */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 48px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+    transition: transform 0.3s ease-in-out; /* hover animation */
+}
+
+/* card hover "pop" */
+.info-card:hover {
+    transform: scale(1.03);
+}
+
+/* global scroll padding for sticky nav */
+html {
+    scroll-padding-top: 5rem; /* 80px */
+}
+
+/* special button colors */
+.btn-green {
+    background-color: #16a34a;
+}
+.btn-green:hover {
+    background-color: #15803d;
+}
+.btn-red {
+    background-color: #dc2626;
+}
+.btn-red:hover {
+    background-color: #b91c1c;
+}
+
+/* contact form input styles */
+.form-input {
+    background: rgba(10, 10, 20, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-input:focus {
+    outline: none;
+    border-color: rgba(59, 130, 246, 0.7);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
